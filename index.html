@@ -1,281 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TrustFoodie — Privacy Policy</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — TrustFoodie</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --green: #10b981; --green-light: #d1fae5; --green-dark: #065f46;
-      --slate: #0f172a; --slate-mid: #334155; --slate-light: #94a3b8;
-      --bg: #f8fafc; --white: #ffffff; --border: #e2e8f0;
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --g:#16a05a;--g-glow:rgba(22,160,90,0.35);--g-glow2:rgba(22,160,90,0.15);
+      --black:#0f0f0f;--text:#1a1a1a;--muted:#6b7280;--border:#e5e7eb;--off:#f9fafb;--white:#fff;
     }
-    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--slate); line-height: 1.7; font-size: 16px; }
-    .hero { background: var(--slate); padding: 72px 24px 64px; text-align: center; position: relative; overflow: hidden; }
-    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 0%, rgba(16,185,129,0.15) 0%, transparent 70%); }
-    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(16,185,129,0.15); border: 1px solid rgba(16,185,129,0.3); color: var(--green); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 14px; border-radius: 100px; margin-bottom: 24px; position: relative; }
-    .hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(36px, 6vw, 56px); color: white; line-height: 1.1; letter-spacing: -1px; margin-bottom: 16px; position: relative; }
-    .hero h1 em { font-style: italic; color: var(--green); }
-    .hero p { color: var(--slate-light); font-size: 15px; max-width: 440px; margin: 0 auto; font-weight: 300; position: relative; }
-    .hero-meta { display: flex; align-items: center; justify-content: center; gap: 24px; margin-top: 40px; position: relative; flex-wrap: wrap; }
-    .hero-meta-item { display: flex; align-items: center; gap: 6px; color: var(--slate-light); font-size: 13px; }
-    .container { max-width: 760px; margin: 0 auto; padding: 64px 24px 80px; }
-    .section { margin-bottom: 56px; }
-    .section-label { font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--green); margin-bottom: 10px; }
-    .section h2 { font-family: 'DM Serif Display', serif; font-size: 26px; color: var(--slate); letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.2; }
-    .section p { color: var(--slate-mid); font-size: 15px; margin-bottom: 14px; }
-    .section p:last-child { margin-bottom: 0; }
-    .divider { height: 1px; background: var(--border); margin-bottom: 56px; }
-    .card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 24px; margin-top: 20px; }
-    .card-row { display: flex; align-items: flex-start; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); }
-    .card-row:first-child { padding-top: 0; }
-    .card-row:last-child { border-bottom: none; padding-bottom: 0; }
-    .card-icon { width: 36px; height: 36px; background: var(--green-light); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
-    .card-icon svg { width: 16px; height: 16px; stroke: var(--green-dark); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-    .card-content h4 { font-size: 14px; font-weight: 600; color: var(--slate); margin-bottom: 3px; }
-    .card-content p { font-size: 13px; color: var(--slate-light); margin: 0; line-height: 1.5; }
-    .third-party-list { list-style: none; margin-top: 16px; display: flex; flex-direction: column; gap: 10px; }
-    .third-party-list li { display: flex; align-items: center; gap: 10px; background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; font-size: 14px; font-weight: 500; color: var(--slate); }
-    .third-party-list li::before { content: ''; width: 8px; height: 8px; background: var(--green); border-radius: 50%; flex-shrink: 0; }
-    .third-party-list a { margin-left: auto; font-size: 12px; color: var(--green); text-decoration: none; font-weight: 500; }
-    .third-party-list a:hover { text-decoration: underline; }
-    .highlight { background: var(--green-light); border: 1px solid rgba(16,185,129,0.2); border-radius: 14px; padding: 20px 24px; margin-top: 16px; }
-    .highlight p { color: var(--green-dark) !important; font-size: 14px !important; margin: 0 !important; }
-    .warning { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 14px; padding: 20px 24px; margin-top: 16px; }
-    .warning-title { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #c2410c; margin-bottom: 8px; }
-    .warning p { color: #7c2d12 !important; font-size: 14px !important; margin: 0 !important; }
-    footer { background: var(--slate); padding: 40px 24px; text-align: center; }
-    .footer-inner { max-width: 760px; margin: 0 auto; }
-    .footer-logo { font-family: 'DM Serif Display', serif; font-size: 22px; color: white; margin-bottom: 8px; }
-    .footer-logo span { color: var(--green); }
-    footer p { color: var(--slate-light); font-size: 13px; margin-bottom: 4px; }
-    @media (max-width: 600px) { .hero { padding: 48px 20px; } .container { padding: 48px 20px 64px; } .hero-meta { flex-direction: column; gap: 12px; } }
+    html{scroll-behavior:smooth}
+    ::-webkit-scrollbar{width:5px}
+    ::-webkit-scrollbar-track{background:transparent}
+    ::-webkit-scrollbar-thumb{background:var(--g);border-radius:99px;box-shadow:0 0 8px var(--g-glow)}
+    ::-webkit-scrollbar-thumb:hover{box-shadow:0 0 14px var(--g-glow)}
+    body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Helvetica Neue",sans-serif;background:var(--white);color:var(--text);-webkit-font-smoothing:antialiased}
+    a{color:var(--g);text-decoration:none;font-weight:500}
+    a:hover{text-decoration:underline}
+    .green{color:var(--g);text-shadow:0 0 20px var(--g-glow),0 0 40px var(--g-glow2)}
+    .green-sm{color:var(--g);text-shadow:0 0 10px var(--g-glow2)}
 
-    /* Animations */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to { opacity: 1; transform: translateY(0); }
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+    @keyframes glowPulse{0%,100%{opacity:1}50%{opacity:.4}}
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)}
+    .reveal.in{opacity:1;transform:none}
+
+    /* NAV */
+    nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
+    nav.scrolled{box-shadow:0 1px 20px rgba(0,0,0,.06)}
+    .nav-inner{max-width:760px;margin:0 auto;padding:0 32px;height:60px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:14px;font-weight:700;letter-spacing:-.3px;color:var(--black)}
+    .logo .g{color:var(--g);text-shadow:0 0 10px var(--g-glow2)}
+    .nav-back{font-size:12px;font-weight:500;color:var(--muted);display:inline-flex;align-items:center;gap:5px;transition:color .2s}
+    .nav-back:hover{color:var(--g);text-decoration:none}
+    .nav-back svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+    /* HERO */
+    .hero{max-width:760px;margin:0 auto;padding:64px 32px 52px;border-bottom:1px solid var(--border)}
+    .hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(22,160,90,0.07);border:1px solid rgba(22,160,90,0.18);color:var(--g);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 13px;border-radius:99px;margin-bottom:26px;animation:fadeUp .5s ease both}
+    .hero-badge-dot{width:5px;height:5px;border-radius:50%;background:var(--g);box-shadow:0 0 8px var(--g-glow);animation:glowPulse 2s infinite}
+    h1{font-size:clamp(40px,5vw,68px);font-weight:800;letter-spacing:-2.5px;line-height:.92;color:var(--black);margin-bottom:20px;animation:fadeUp .6s .1s ease both}
+    .hero-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px;animation:fadeUp .6s .2s ease both}
+    .pill{font-size:11px;font-weight:500;background:var(--off);border:1px solid var(--border);color:var(--muted);padding:5px 12px;border-radius:99px}
+
+    /* TOC */
+    .toc{max-width:760px;margin:0 auto;padding:28px 32px;background:var(--off);border-bottom:1px solid var(--border)}
+    .toc-label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+    .toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:7px}
+    .toc-link{font-size:12px;font-weight:500;color:var(--text);padding:8px 12px;border-radius:8px;border:1px solid var(--border);background:var(--white);transition:all .2s;display:block}
+    .toc-link:hover{border-color:var(--g);color:var(--g);text-shadow:0 0 10px var(--g-glow2);transform:translateY(-1px);text-decoration:none;box-shadow:0 4px 16px rgba(22,160,90,0.08)}
+
+    /* CONTENT */
+    .container{max-width:760px;margin:0 auto;padding:0 32px 80px}
+    .section{padding:52px 0;border-bottom:1px solid var(--border)}
+    .section:last-child{border-bottom:none}
+    .section-label{font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--g);text-shadow:0 0 10px var(--g-glow2);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+    .section-label::after{content:"";flex:1;height:1px;background:rgba(22,160,90,0.12)}
+    h2{font-size:26px;font-weight:800;letter-spacing:-.8px;color:var(--black);margin-bottom:18px}
+    p{font-size:14px;color:var(--muted);line-height:1.85;font-weight:400;margin-bottom:14px}
+    p:last-child{margin-bottom:0}
+    strong{font-weight:700;color:var(--text)}
+
+    /* CARDS */
+    .card{border:1.5px solid var(--border);border-radius:16px;overflow:hidden;margin-top:18px;transition:box-shadow .3s}
+    .card:hover{box-shadow:0 4px 24px rgba(0,0,0,.06)}
+    .card-row{display:flex;align-items:flex-start;gap:14px;padding:18px 20px;border-bottom:1px solid var(--border);transition:background .2s}
+    .card-row:last-child{border-bottom:none}
+    .card-row:hover{background:#f4fbf7}
+    .card-dot{width:8px;height:8px;border-radius:50%;background:var(--g);flex-shrink:0;margin-top:5px;box-shadow:0 0 8px var(--g-glow)}
+    .card-title{font-size:13px;font-weight:700;color:var(--black);margin-bottom:3px}
+    .card-desc{font-size:13px;color:var(--muted);line-height:1.6}
+
+    /* HIGHLIGHT */
+    .highlight{background:rgba(22,160,90,0.05);border:1.5px solid rgba(22,160,90,0.18);border-radius:12px;padding:16px 20px;margin-top:16px}
+    .highlight p{color:#166534 !important;font-size:13px !important;margin:0 !important;font-weight:500}
+
+    /* WARNING */
+    .warning{background:#fffbf0;border:1.5px solid #fde68a;border-radius:12px;padding:16px 20px;margin-top:16px}
+    .warning-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#b45309;margin-bottom:8px}
+    .warning p{color:#78350f !important;font-size:13px !important;margin:0 !important}
+
+    /* THIRDS */
+    .thirds{border:1.5px solid var(--border);border-radius:14px;overflow:hidden;margin-top:16px}
+    .third-row{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--border);transition:background .2s}
+    .third-row:last-child{border-bottom:none}
+    .third-row:hover{background:#f4fbf7}
+    .third-name{font-size:13px;font-weight:600;color:var(--black)}
+    .third-link{font-size:11px;font-weight:600;color:var(--g);text-shadow:0 0 8px var(--g-glow2);transition:opacity .2s}
+    .third-link:hover{opacity:.7;text-decoration:none}
+
+    /* CONTACT */
+    .contact-box{border:1.5px solid var(--border);border-radius:16px;padding:26px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;transition:all .25s cubic-bezier(.16,1,.3,1);margin-top:18px}
+    .contact-box:hover{border-color:var(--g);background:rgba(22,160,90,0.03);transform:translateY(-2px);box-shadow:0 8px 28px rgba(22,160,90,0.1);text-decoration:none}
+    .contact-name{font-size:15px;font-weight:800;color:var(--black);margin-bottom:4px}
+    .contact-email{font-size:13px;color:var(--g);text-shadow:0 0 10px var(--g-glow2)}
+    .c-arrow{width:20px;height:20px;stroke:#d1d5db;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke .2s,transform .2s}
+    .contact-box:hover .c-arrow{stroke:var(--g);transform:translateX(4px)}
+
+    footer{background:var(--black);padding:28px 32px;text-align:center}
+    footer p{font-size:12px;color:#555}
+
+    @media(max-width:600px){
+      .nav-inner,.hero,.toc,.container{padding-left:20px;padding-right:20px}
+      h1{letter-spacing:-1.5px}
+      .toc-grid{grid-template-columns:1fr 1fr}
     }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    .hero-badge { animation: fadeIn 0.6s ease forwards; }
-    .hero h1 { animation: fadeUp 0.7s ease forwards; }
-    .hero p { animation: fadeUp 0.8s ease 0.1s both; }
-    .hero-meta { animation: fadeUp 0.8s ease 0.2s both; }
-    .section {
-      opacity: 0;
-      animation: fadeUp 0.6s ease forwards;
-    }
-    .section:nth-child(1) { animation-delay: 0.05s; }
-    .section:nth-child(2) { animation-delay: 0.1s; }
-    .section:nth-child(3) { animation-delay: 0.15s; }
-    .section:nth-child(4) { animation-delay: 0.2s; }
-    .section:nth-child(5) { animation-delay: 0.25s; }
-    .section:nth-child(6) { animation-delay: 0.3s; }
-    .section:nth-child(7) { animation-delay: 0.35s; }
-    .section:nth-child(8) { animation-delay: 0.4s; }
-    .section:nth-child(9) { animation-delay: 0.45s; }
-    .section:nth-child(10) { animation-delay: 0.5s; }
-    .card-row { transition: background 0.2s ease; }
-    .card-row:hover { background: #f8fafc; }
-    .third-party-list li { transition: border-color 0.2s ease, transform 0.2s ease; }
-    .third-party-list li:hover { border-color: var(--green); transform: translateX(4px); }
   </style>
 </head>
 <body>
 
+<nav id="nav">
+  <div class="nav-inner">
+    <div class="logo">Core<span class="g">Ease</span> Digital</div>
+    <a href="https://coreeasedigital.github.io" class="nav-back">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      Back
+    </a>
+  </div>
+</nav>
+
 <div class="hero">
-  <div class="hero-badge">Legal Document</div>
-  <h1>Privacy <em>Policy</em></h1>
-  <p>We believe transparency builds trust. Here's exactly how TrustFoodie handles your data.</p>
+  <div class="hero-badge"><span class="hero-badge-dot"></span> Legal Document</div>
+  <h1>Privacy <span class="green">Policy.</span></h1>
   <div class="hero-meta">
-    <div class="hero-meta-item">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-      Effective: February 27, 2026
-    </div>
-    <div class="hero-meta-item">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      GDPR Compliant
-    </div>
-    <div class="hero-meta-item">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-      CoreEase Digital
-    </div>
+    <span class="pill">Effective: February 27, 2026</span>
+    <span class="pill">GDPR Compliant</span>
+    <span class="pill">CoreEase Digital</span>
+  </div>
+</div>
+
+<div class="toc">
+  <div class="toc-label">Jump to section</div>
+  <div class="toc-grid">
+    <a href="#overview" class="toc-link">Overview</a>
+    <a href="#collection" class="toc-link">Data Collection</a>
+    <a href="#ai" class="toc-link">AI Usage</a>
+    <a href="#thirds" class="toc-link">Third Parties</a>
+    <a href="#ads" class="toc-link">Advertising</a>
+    <a href="#rights" class="toc-link">Your Rights</a>
+    <a href="#children" class="toc-link">Children</a>
+    <a href="#contact" class="toc-link">Contact</a>
   </div>
 </div>
 
 <div class="container">
 
-  <div class="section">
+  <div class="section reveal" id="overview">
     <div class="section-label">Overview</div>
     <h2>About This Policy</h2>
-    <p>This privacy policy applies to the TrustFoodie app (referred to as the "Application") for mobile devices, created by CoreEase Digital (referred to as the "Service Provider") as an Ad Supported service. This service is intended for use "AS IS".</p>
-    <p>By using TrustFoodie, you agree to the collection and use of information as described in this policy. We are committed to protecting your privacy and being transparent about how we operate.</p>
+    <p>This privacy policy applies to the <strong>TrustFoodie</strong> app for mobile devices, created by <strong>CoreEase Digital</strong> as an Ad Supported service. This service is intended for use "AS IS".</p>
+    <p>By using TrustFoodie, you agree to the collection and use of information as described in this policy. We are committed to protecting your privacy and being fully transparent about how we operate.</p>
   </div>
 
-  <div class="divider"></div>
-
-  <div class="section">
+  <div class="section reveal" id="collection">
     <div class="section-label">Data Collection</div>
     <h2>Information We Collect</h2>
     <p>The Application collects certain information when you use it. This includes:</p>
     <div class="card">
-      <div class="card-row">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        </div>
-        <div class="card-content">
-          <h4>IP Address</h4>
-          <p>Your device's Internet Protocol address for network communication purposes.</p>
-        </div>
-      </div>
-      <div class="card-row">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        </div>
-        <div class="card-content">
-          <h4>Food Photos</h4>
-          <p>Photos of food ingredient labels you capture in the app, transmitted securely to Google Gemini AI for analysis and deleted immediately after.</p>
-        </div>
-      </div>
-      <div class="card-row">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-        </div>
-        <div class="card-content">
-          <h4>Dietary Preferences</h4>
-          <p>Your selected dietary requirements (e.g. Vegan, Gluten-Free, Halal) stored locally on your device only.</p>
-        </div>
-      </div>
+      <div class="card-row"><div class="card-dot"></div><div><div class="card-title">IP Address</div><div class="card-desc">Your device's Internet Protocol address for network communication purposes.</div></div></div>
+      <div class="card-row"><div class="card-dot"></div><div><div class="card-title">Food Photos</div><div class="card-desc">Photos of food ingredient labels you capture in the app, transmitted securely to Google Gemini AI for analysis and deleted immediately after.</div></div></div>
+      <div class="card-row"><div class="card-dot"></div><div><div class="card-title">Dietary Preferences</div><div class="card-desc">Your selected dietary requirements stored locally on your device only. We do not have access to this data.</div></div></div>
     </div>
-    <div class="highlight">
-      <p>The Application does <strong>not</strong> collect or track your precise geographic location at any time.</p>
-    </div>
+    <div class="highlight"><p>📍 The Application does <strong>not</strong> collect or track your precise geographic location at any time.</p></div>
   </div>
 
-  <div class="divider"></div>
-
-  <div class="section">
+  <div class="section reveal" id="ai">
     <div class="section-label">Artificial Intelligence</div>
     <h2>How We Use AI</h2>
     <p>TrustFoodie uses <strong>Google Gemini AI</strong> to power its core ingredient analysis feature. When you capture a photo of a food label, that image is securely transmitted to Google's Gemini API for processing.</p>
     <div class="card">
-      <div class="card-row">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-        </div>
-        <div class="card-content">
-          <h4>Ingredient Analysis</h4>
-          <p>Photos are sent to Google Gemini to read and interpret ingredient lists, generating grades, summaries, and dietary suitability assessments.</p>
-        </div>
-      </div>
-      <div class="card-row">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-        </div>
-        <div class="card-content">
-          <h4>AI Chat Assistant</h4>
-          <p>Follow-up questions about scanned products are processed through Google Gemini to provide informed, contextual responses.</p>
-        </div>
-      </div>
-      <div class="card-row">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <div class="card-content">
-          <h4>Photo Handling</h4>
-          <p>Photos are deleted immediately after analysis. They are never stored, shared with third parties, or used for any purpose beyond generating your ingredient result.</p>
-        </div>
-      </div>
+      <div class="card-row"><div class="card-dot"></div><div><div class="card-title">Ingredient Analysis</div><div class="card-desc">Photos are sent to Google Gemini to read and interpret ingredient lists, generating health grades, summaries, and dietary suitability assessments.</div></div></div>
+      <div class="card-row"><div class="card-dot"></div><div><div class="card-title">AI Chat Assistant</div><div class="card-desc">Follow-up questions about scanned products are processed through Google Gemini to provide informed, contextual responses.</div></div></div>
+      <div class="card-row"><div class="card-dot"></div><div><div class="card-title">Photo Handling</div><div class="card-desc">Photos are deleted immediately after analysis. They are never stored, shared with third parties, or used beyond generating your ingredient result.</div></div></div>
     </div>
     <div class="warning">
-      <div class="warning-title">AI Disclaimer</div>
-      <p>While Google Gemini AI is highly capable, it may occasionally misread text or misinterpret ingredients — particularly from blurry, angled, or poorly lit photos. TrustFoodie is an informational tool only and should not replace professional medical, dietary, or allergy advice. Always verify critical ingredient information directly from the product packaging.</p>
+      <div class="warning-label">⚠ AI Disclaimer</div>
+      <p>While Google Gemini AI is highly capable, it may occasionally misread text or misinterpret ingredients — particularly from blurry, angled, or poorly lit photos. TrustFoodie is an informational tool only and should not replace professional medical, dietary, or allergy advice. Always verify critical information directly from the product packaging.</p>
     </div>
   </div>
 
-  <div class="divider"></div>
-
-  <div class="section">
+  <div class="section reveal" id="thirds">
     <div class="section-label">Third Parties</div>
     <h2>Third Party Services</h2>
-    <p>TrustFoodie uses the following third-party services, each of which has its own privacy policy governing how they handle data:</p>
-    <ul class="third-party-list">
-      <li>Google Play Services <a href="https://policies.google.com/privacy" target="_blank">View Policy</a></li>
-      <li>Google AdMob <a href="https://support.google.com/admob/answer/6128543" target="_blank">View Policy</a></li>
-      <li>Google Gemini AI <a href="https://ai.google.dev/gemini-api/terms" target="_blank">View Policy</a></li>
-    </ul>
-    <p style="margin-top:16px;">The Service Provider may share information with third parties only as required by law, to protect rights and safety, or with trusted service providers who adhere to this privacy policy.</p>
+    <p>TrustFoodie uses the following third-party services, each with its own privacy policy governing how they handle data:</p>
+    <div class="thirds">
+      <div class="third-row"><div class="third-name">Google Play Services</div><a href="https://policies.google.com/privacy" target="_blank" class="third-link">View Policy →</a></div>
+      <div class="third-row"><div class="third-name">Google AdMob</div><a href="https://support.google.com/admob/answer/6128543" target="_blank" class="third-link">View Policy →</a></div>
+      <div class="third-row"><div class="third-name">Google Gemini AI</div><a href="https://ai.google.dev/gemini-api/terms" target="_blank" class="third-link">View Policy →</a></div>
+    </div>
+    <p style="margin-top:16px">The Service Provider may share information with third parties only as required by law, to protect rights and safety, or with trusted service providers who adhere to this privacy policy.</p>
   </div>
 
-  <div class="divider"></div>
-
-  <div class="section">
+  <div class="section reveal" id="ads">
     <div class="section-label">Advertising</div>
     <h2>Ads and Advertising ID</h2>
     <p>TrustFoodie is free to use and supported by advertising through <strong>Google AdMob</strong>. AdMob may use your device's Advertising ID to serve relevant ads within the app.</p>
-    <p>Banner ads appear at the top of the screen, and occasional full-screen interstitial ads may appear between scans. You can opt out of personalised advertising through your device's settings under Privacy then Ads.</p>
+    <p>You can opt out of personalised advertising through your device's settings under <strong>Privacy → Ads</strong>.</p>
   </div>
 
-  <div class="divider"></div>
-
-  <div class="section">
+  <div class="section reveal" id="rights">
     <div class="section-label">Your Data</div>
     <h2>Data Retention and Your Rights</h2>
-    <p>Your scan history and dietary preferences are stored exclusively on your device using local storage. The Service Provider does not have access to this data.</p>
+    <p>Your scan history and dietary preferences are stored <strong>exclusively on your device</strong> using local storage. The Service Provider does not have access to this data.</p>
     <p>You can delete all locally stored data at any time by clearing the app's data through your device settings, or by uninstalling the app entirely.</p>
-    <p>To request deletion of any other data held by the Service Provider, contact us at coreeasedigital@gmail.com and we will respond within a reasonable timeframe.</p>
+    <p>To request deletion of any other data, contact us at <a href="mailto:coreeasedigital@gmail.com">coreeasedigital@gmail.com</a> and we will respond within a reasonable timeframe.</p>
   </div>
 
-  <div class="divider"></div>
-
-  <div class="section">
+  <div class="section reveal" id="children">
     <div class="section-label">Children</div>
     <h2>Children's Privacy</h2>
     <p>TrustFoodie does not knowingly collect personally identifiable information from children under 13 years of age. If we discover that a child under 13 has provided personal information, it will be immediately deleted.</p>
-    <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us at coreeasedigital@gmail.com.</p>
+    <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:coreeasedigital@gmail.com">coreeasedigital@gmail.com</a>.</p>
   </div>
 
-  <div class="divider"></div>
-
-  <div class="section">
+  <div class="section reveal">
     <div class="section-label">Opt Out</div>
     <h2>Stopping Data Collection</h2>
     <p>You can stop all collection of information by the Application by uninstalling it using the standard uninstall process available on your mobile device or via the Google Play Store.</p>
   </div>
 
-  <div class="divider"></div>
-
-  <div class="section">
+  <div class="section reveal">
     <div class="section-label">Updates</div>
     <h2>Changes to This Policy</h2>
-    <p>This Privacy Policy may be updated from time to time. Any changes will be reflected on this page with an updated effective date. Continued use of the Application after changes constitutes acceptance of the revised policy. We encourage you to review this page periodically.</p>
+    <p>This Privacy Policy may be updated from time to time. Any changes will be reflected on this page with an updated effective date. Continued use of the Application after changes constitutes acceptance of the revised policy.</p>
   </div>
 
-  <div class="divider"></div>
-
-  <div class="section">
+  <div class="section reveal" id="contact">
     <div class="section-label">Contact</div>
     <h2>Get In Touch</h2>
     <p>If you have any questions or concerns about this privacy policy or how your data is handled, please contact the Service Provider:</p>
-    <div class="highlight">
-      <p><strong>CoreEase Digital</strong> — coreeasedigital@gmail.com</p>
-    </div>
+    <a href="mailto:coreeasedigital@gmail.com" class="contact-box">
+      <div>
+        <div class="contact-name">CoreEase Digital</div>
+        <div class="contact-email">coreeasedigital@gmail.com</div>
+      </div>
+      <svg class="c-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
   </div>
 
 </div>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-logo">Trust<span>Foodie</span></div>
-    <p>2026 CoreEase Digital. All rights reserved.</p>
-    <p>Effective date: February 27, 2026</p>
-  </div>
-</footer>
+<footer><p>© 2026 CoreEase Digital · Effective February 27, 2026</p></footer>
 
+<script>
+  const nav = document.getElementById("nav");
+  window.addEventListener("scroll", () => nav.classList.toggle("scrolled", window.scrollY > 10));
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add("in"); obs.unobserve(e.target); } });
+  }, { threshold: 0.06 });
+  document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
+</script>
 </body>
 </html>
