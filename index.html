@@ -100,7 +100,7 @@
   <div class="hero-badge"><span class="hero-badge-dot"></span> Legal Document</div>
   <h1>Privacy <span class="green">Policy.</span></h1>
   <div class="hero-meta">
-    <span class="pill">Effective: April 25, 2026</span>
+    <span class="pill">Effective: May 9, 2026</span>
     <span class="pill">GDPR Compliant</span>
     <span class="pill">CoreEaseDigital</span>
   </div>
@@ -112,6 +112,7 @@
     <a href="#collection" class="toc-link">Data Collection</a>
     <a href="#ai" class="toc-link">AI Usage</a>
     <a href="#subscriptions" class="toc-link">Subscriptions</a>
+    <a href="#promo" class="toc-link">Promo Codes</a>
     <a href="#thirds" class="toc-link">Third Parties</a>
     <a href="#ads" class="toc-link">Advertising</a>
     <a href="#rights" class="toc-link">Your Rights</a>
@@ -132,7 +133,7 @@
     <p>The Application collects certain information when you use it. This includes:</p>
     <div class="card">
       <div class="card-row"><div class="card-dot"></div><div><div class="card-title">IP Address</div><div class="card-desc">Your device's Internet Protocol address for network communication purposes.</div></div></div>
-      <div class="card-row"><div class="card-dot"></div><div><div class="card-title">Food Photos</div><div class="card-desc">Photos of food ingredient labels you capture in the app, transmitted securely to Google Gemini AI for analysis and deleted immediately after.</div></div></div>
+      <div class="card-row"><div class="card-dot"></div><div><div class="card-title">Food Photos</div><div class="card-desc">Photos of food ingredient labels or barcodes you capture in the app, transmitted securely to Google Gemini AI for analysis and deleted immediately after.</div></div></div>
       <div class="card-row"><div class="card-dot"></div><div><div class="card-title">Dietary Preferences</div><div class="card-desc">Your selected dietary requirements stored locally on your device only. We do not have access to this data.</div></div></div>
       <div class="card-row"><div class="card-dot"></div><div><div class="card-title">Purchase Information</div><div class="card-desc">If you subscribe to TrustFoodie Pro, your subscription status and anonymous user identifier are processed by RevenueCat and Google Play. We do not store or have access to your payment details.</div></div></div>
     </div>
@@ -141,15 +142,17 @@
   <div class="section reveal" id="ai">
     <div class="section-label">Artificial Intelligence</div>
     <h2>How We Use AI</h2>
-    <p>TrustFoodie uses <strong>Google Gemini AI</strong> to power its core ingredient analysis feature. When you capture a photo of a food label, that image is securely transmitted to Google's Gemini API for processing.</p>
+    <p>TrustFoodie uses <strong>Google Gemini AI</strong> to power its core ingredient analysis feature. When you capture a photo of a food label or barcode, that image is securely transmitted to Google's Gemini API for processing.</p>
     <div class="card">
       <div class="card-row"><div class="card-dot"></div><div><div class="card-title">Ingredient Analysis</div><div class="card-desc">Photos are sent to Google Gemini to read and interpret ingredient lists, generating health grades, summaries, and dietary suitability assessments.</div></div></div>
+      <div class="card-row"><div class="card-dot"></div><div><div class="card-title">Barcode Scanning</div><div class="card-desc">If a barcode is detected, Gemini identifies the product and provides analysis based on known ingredient data for that product.</div></div></div>
       <div class="card-row"><div class="card-dot"></div><div><div class="card-title">AI Chat Assistant</div><div class="card-desc">Follow-up questions about scanned products are processed through Google Gemini to provide informed, contextual responses.</div></div></div>
+      <div class="card-row"><div class="card-dot"></div><div><div class="card-title">Product Comparison</div><div class="card-desc">When comparing products, scanned product data is sent to Google Gemini to determine the healthiest option based on your dietary preferences.</div></div></div>
       <div class="card-row"><div class="card-dot"></div><div><div class="card-title">Photo Handling</div><div class="card-desc">Photos are deleted immediately after analysis. They are never stored, shared with third parties, or used beyond generating your ingredient result.</div></div></div>
     </div>
     <div class="warning">
       <div class="warning-label">⚠ AI Disclaimer</div>
-      <p>While Google Gemini AI is highly capable, it may occasionally misread text or misinterpret ingredients — particularly from blurry, angled, or poorly lit photos. TrustFoodie is an informational tool only and should not replace professional medical, dietary, or allergy advice. Always verify critical information directly from the product packaging.</p>
+      <p>While Google Gemini AI is highly capable, it may occasionally misread text or misinterpret ingredients — particularly from blurry, angled, or poorly lit photos. Barcode-based analysis relies on the AI's knowledge base and may not always reflect the most current product formulation. TrustFoodie is an informational tool only and should not replace professional medical, dietary, or allergy advice. Always verify critical information directly from the product packaging.</p>
     </div>
   </div>
   <div class="section reveal" id="subscriptions">
@@ -163,6 +166,17 @@
     </div>
     <div class="highlight"><p>💳 Your payment information is handled entirely by Google Play. CoreEaseDigital never sees or stores your financial details.</p></div>
   </div>
+  <div class="section reveal" id="promo">
+    <div class="section-label">Promotional Codes</div>
+    <h2>Promo Codes</h2>
+    <p>TrustFoodie offers promotional codes that grant temporary access to TrustFoodie Pro features. When you redeem a promo code, the app connects to <strong>Firebase Realtime Database</strong> to validate the code.</p>
+    <div class="card">
+      <div class="card-row"><div class="card-dot"></div><div><div class="card-title">What We Send</div><div class="card-desc">Only the promo code text you enter is sent to Firebase for validation. No personal information, device identifiers, or account data is transmitted.</div></div></div>
+      <div class="card-row"><div class="card-dot"></div><div><div class="card-title">What We Store</div><div class="card-desc">A record of which codes you have used and your Pro access expiry date are stored locally on your device only. We do not track individual users or link code usage to personal identities.</div></div></div>
+      <div class="card-row"><div class="card-dot"></div><div><div class="card-title">Usage Counter</div><div class="card-desc">Firebase maintains an anonymous counter of how many times each code has been redeemed. This counter contains no user-identifying information.</div></div></div>
+    </div>
+    <div class="highlight"><p>🎟️ Promo code validation is fully anonymous. We never know who redeemed a code — only how many times it has been used.</p></div>
+  </div>
   <div class="section reveal" id="thirds">
     <div class="section-label">Third Parties</div>
     <h2>Third Party Services</h2>
@@ -172,6 +186,7 @@
       <div class="third-row"><div class="third-name">Google AdMob</div><a href="https://support.google.com/admob/answer/6128543" target="_blank" class="third-link">View Policy →</a></div>
       <div class="third-row"><div class="third-name">Google Gemini AI</div><a href="https://ai.google.dev/gemini-api/terms" target="_blank" class="third-link">View Policy →</a></div>
       <div class="third-row"><div class="third-name">RevenueCat</div><a href="https://www.revenuecat.com/privacy/" target="_blank" class="third-link">View Policy →</a></div>
+      <div class="third-row"><div class="third-name">Firebase Realtime Database</div><a href="https://firebase.google.com/support/privacy" target="_blank" class="third-link">View Policy →</a></div>
     </div>
     <p style="margin-top:16px">The Service Provider may share information with third parties only as required by law, to protect rights and safety, or with trusted service providers who adhere to this privacy policy.</p>
   </div>
@@ -179,13 +194,13 @@
     <div class="section-label">Advertising</div>
     <h2>Ads and Advertising ID</h2>
     <p>TrustFoodie is free to use and supported by advertising through <strong>Google AdMob</strong>. AdMob may use your device's Advertising ID to serve relevant ads within the app.</p>
-    <p>Subscribers to <strong>TrustFoodie Pro</strong> enjoy a completely ad-free experience. All banner and interstitial ads are removed for the duration of an active subscription.</p>
+    <p>Subscribers to <strong>TrustFoodie Pro</strong> enjoy a completely ad-free experience. All banner and full screen ads are removed for the duration of an active subscription or promotional code access.</p>
     <p>You can opt out of personalised advertising through your device's settings under <strong>Privacy → Ads</strong>.</p>
   </div>
   <div class="section reveal" id="rights">
     <div class="section-label">Your Data</div>
     <h2>Data Retention and Your Rights</h2>
-    <p>Your scan history and dietary preferences are stored <strong>exclusively on your device</strong> using local storage. The Service Provider does not have access to this data.</p>
+    <p>Your scan history, dietary preferences, and promo code usage records are stored <strong>exclusively on your device</strong> using local storage. The Service Provider does not have access to this data.</p>
     <p>You can delete all locally stored data at any time by clearing the app's data through your device settings, or by uninstalling the app entirely.</p>
     <p>To request deletion of any other data, contact us at <a href="mailto:coreeasedigital@gmail.com">coreeasedigital@gmail.com</a> and we will respond within a reasonable timeframe.</p>
   </div>
@@ -218,7 +233,7 @@
     </a>
   </div>
 </div>
-<footer><p>© 2026 CoreEaseDigital · Effective April 25, 2026</p></footer>
+<footer><p>© 2026 CoreEaseDigital · Effective May 9, 2026</p></footer>
 <script>
   const nav = document.getElementById("nav");
   window.addEventListener("scroll", () => nav.classList.toggle("scrolled", window.scrollY > 10));
